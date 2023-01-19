@@ -17,12 +17,11 @@ The version of font_awesome icons is: 6.1.0
 
 ## Features
 
-<!-- TODO: List what your package can do. Maybe include images, gifs, or videos. -->
+Load an icon by dynamical name, support material icons and Font Awesome icons.
 
 ## Getting started
 
-<!-- TODO: List prerequisites and provide or point to information on how to -->
-<!-- start using the package. -->
+Prerequisites: Flutter 2+.
 
 ## Usage
 
