@@ -31,7 +31,7 @@ All icons namse should be in the same format you can find on https://api.flutter
 
 ```dart
 import 'package:flutter/material.dart';
-import 'package:clia_dynamic_icons/dynamic_icons.dart';
+import 'package:clia_dynamic_icons/clia_dynamic_icons.dart';
 
 void main() {
   runApp(const MyApp());

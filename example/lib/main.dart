@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:dynamic_icons/dynamic_icons.dart';
+import 'package:clia_dynamic_icons/clia_dynamic_icons.dart';
 
 void main() {
   runApp(const MyApp());
@@ -49,8 +49,6 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-
-
   @override
   Widget build(BuildContext context) {
     // This method is rerun every time setState is called, for instance as done
@@ -61,42 +59,15 @@ class _MyHomePageState extends State<MyHomePage> {
     // than having to individually change instances of widgets.
 
     var iconList = [
-      {
-        "title":"Help",
-        "iconName":"help"
-      },
-      {
-        "title":"Search",
-        "iconName":"search"
-      },
-      {
-        "title":"Account",
-        "iconName":"account_balance"
-      },
-      {
-        "title":"Add",
-        "iconName":"add"
-      },
-      {
-        "title":"Alarm",
-        "iconName":"alarm"
-      },
-      {
-        "title":"Apps",
-        "iconName":"apps"
-      },
-      {
-        "title":"Bike",
-        "iconName":"bike_scooter"
-      },
-      {
-        "title":"Call",
-        "iconName":"call"
-      },
-      {
-        "title":"Camera",
-        "iconName":"camera_rear"
-      }
+      {"title": "Help", "iconName": "help"},
+      {"title": "Search", "iconName": "search"},
+      {"title": "Account", "iconName": "account_balance"},
+      {"title": "Add", "iconName": "add"},
+      {"title": "Alarm", "iconName": "alarm"},
+      {"title": "Apps", "iconName": "apps"},
+      {"title": "Bike", "iconName": "bike_scooter"},
+      {"title": "Call", "iconName": "call"},
+      {"title": "Camera", "iconName": "camera_rear"}
     ];
     return Scaffold(
       appBar: AppBar(
@@ -105,17 +76,17 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text(widget.title),
       ),
       body: ListView.builder(
-        itemCount: iconList.length,
-          itemBuilder: (ctx,index){
+          itemCount: iconList.length,
+          itemBuilder: (ctx, index) {
             return Card(
               child: ListTile(
-                title: Text(iconList[index]['title']??""),
-                leading: DynamicIcons.getIconFromName(iconList[index]['iconName']??""),
+                title: Text(iconList[index]['title'] ?? ""),
+                leading: DynamicIcons.getIconFromName(
+                    iconList[index]['iconName'] ?? ""),
               ),
             );
-          }
-      ),
-       // This trailing comma makes auto-formatting nicer for build methods.
+          }),
+      // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
 }
