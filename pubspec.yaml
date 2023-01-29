@@ -1,6 +1,6 @@
 name: clia_dynamic_icons
 description: Insert Material Icon and FontAwesome icons dynamically in Flutter app when the icons are not known at compile time.
-version: 0.0.2
+version: 0.0.3
 homepage: https://github.com/clia/clia_dynamic_icon
 
 environment:
