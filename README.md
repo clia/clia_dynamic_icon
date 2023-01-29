@@ -11,6 +11,10 @@ and the Flutter guide for
 [developing packages and plugins](https://flutter.dev/developing-packages). 
 -->
 
+# clia_dynamic_icon
+
+Forked from [https://github.com/sakibulrasel/dynamic_icon](https://github.com/sakibulrasel/dynamic_icon). Thanks!
+
 Insert Material Icon and FontAwesome icons dynamically in Flutter app when the icons are not known at compile time.
 
 The version of font_awesome icons is: 6.1.0
